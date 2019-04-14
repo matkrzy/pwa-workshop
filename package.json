@@ -1,0 +1,58 @@
+{
+  "name": "pwa-workshop",
+  "version": "1.0.0",
+  "repository": "https://github.com/matkrzy/pwa-workshop.git",
+  "author": "Mateusz Krzyżanowski <mateusz.krzyzanowski@thesoftwarehouse.pl>",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build ./public/index.html",
+    "start": "parcel ./public/index.html --port 3000",
+    "clean": "rm dist/bundle.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "postcss-modules": "^1.4.1",
+    "prettier": "^1.17.0",
+    "sass": "^1.18.0"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">0.25%",
+      "not op_mini all",
+      "ie 11"
+    ]
+  },
+  "postcss": {
+    "modules": true
+  },
+  "sass": {
+    "modules": true
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "modules": false
+        }
+      ],
+      "@babel/preset-react"
+    ]
+  }
+}
